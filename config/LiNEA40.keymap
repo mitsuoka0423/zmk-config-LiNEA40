@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -123,10 +123,10 @@
 
         default_layer {
             bindings = <
-&kp Q                   &kp W                   &kp E      &kp R  &kp T                          &kp Y        &kp U  &kp I      &kp O    &kp P
-&lt 3 A                 &kp S                   &kp D      &kp F  &kp G                          &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&kp Z                   &kp X                   &kp C      &kp V  &kp B                          &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&mt LEFT_COMMAND LANG2  &mt LEFT_ALT LA(SPACE)  &mkp LCLK  &none  &kp SPACE  &mo 1    &mkp RCLK  &lt 4 SPACE         &kp LANG1  &trans   &mo 6
+&kp Q                   &kp W                   &kp E      &kp R  &kp T                          &kp Y        &kp U  &kp I        &kp O    &kp P
+&lt 3 A                 &kp S                   &kp D      &kp F  &kp G                          &kp H        &kp J  &kp K        &kp L    &lt 5 MINUS
+&kp Z                   &kp X                   &kp C      &kp V  &kp B                          &kp N        &kp M  &kp COMMA    &kp DOT  &kp SLASH
+&mt LEFT_COMMAND LANG2  &mt LEFT_ALT LA(SPACE)  &mkp LCLK  &none  &kp SPACE  &mo 1    &mkp RCLK  &lt 4 SPACE         &lt 2 LANG1  &trans   &mo 6
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
@@ -136,10 +136,10 @@
 
         Numeric_Layer {
             bindings = <
-&trans  &trans  &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET                                         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9
-&trans  &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6
-&trans  &trans  &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE                                           &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3
-&trans  &trans  &trans  &trans                &kp LESS_THAN          &kp GREATER_THAN    &kp LESS_THAN  &kp GREATER_THAN                             &kp NUMBER_0  &trans        &trans
+&kp EXCLAMATION  &kp AT_SIGN    &kp HASH       &kp DOLLAR         &kp PERCENT                           &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9
+&kp CARET        &kp AMPERSAND  &kp ASTERISK   &kp EQUAL          &kp PLUS                              &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6
+&kp SEMICOLON    &kp COLON      &kp SQT        &kp DOUBLE_QUOTES  &kp GRAVE                             &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3
+&kp SLASH        &kp QUESTION   &kp BACKSLASH  &kp PIPE           &kp TILDE    &trans    &kp LESS_THAN  &kp GREATER_THAN                             &kp NUMBER_0  &trans        &trans
             >;
         };
 
@@ -184,12 +184,12 @@
 
         //5
 
-        None2 {
+        Operation-Layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans  &trans  &trans
+&kp ESCAPE  &trans  &trans  &trans  &trans                    &trans  &trans                &trans                 &trans  &trans
+&trans      &trans  &trans  &trans  &trans                    &trans  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &trans  &trans
+&trans      &trans  &trans  &trans  &trans                    &trans  &trans                &trans                 &trans  &trans
+&trans      &trans  &trans  &trans  &trans  &trans    &trans  &trans                        &trans                 &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
