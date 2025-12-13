@@ -15,9 +15,7 @@
 #define SCROLL 5
 #define WIRELESS 6
 
-&mt {
-    tapping-term-ms = <300>;
-};
+&mt { tapping-term-ms = <300>; };
 
 //mouse cursol
 
@@ -61,7 +59,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -129,7 +127,7 @@
             bindings = <
 &kp Q                   &kp W                   &kp E      &kp R  &kp T                          &kp Y        &kp U  &kp I        &kp O    &kp P
 &lt 3 A                 &kp S                   &kp D      &kp F  &kp G                          &kp H        &kp J  &kp K        &kp L    &lt 5 MINUS
-&kp Z                   &kp X                   &kp C      &kp V  &kp B                          &kp N        &kp M  &kp COMMA    &kp DOT  &kp SLASH
+&mt LEFT_SHIFT Z        &kp X                   &kp C      &kp V  &kp B                          &kp N        &kp M  &kp COMMA    &kp DOT  &kp SLASH
 &mt LEFT_COMMAND LANG2  &mt LEFT_ALT LA(SPACE)  &mkp LCLK  &none  &kp SPACE  &mo 1    &mkp RCLK  &lt 4 SPACE         &lt 2 LANG1  &trans   &mo 6
             >;
 
