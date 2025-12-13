@@ -59,7 +59,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -131,7 +131,7 @@
 &mt LEFT_COMMAND LANG2  &mt LEFT_ALT LA(SPACE)  &mkp LCLK  &none  &kp SPACE  &mo 1    &mkp RCLK  &lt 4 SPACE         &lt 2 LANG1  &trans   &mo 6
             >;
 
-            sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&mouse_scrl SCRL_UP SCRL_DOWN>;
         };
 
         //1
@@ -168,7 +168,7 @@
 &trans  &trans            &trans  &trans            &trans  &trans    &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)            &trans    &trans     &trans
             >;
 
-            sensor-bindings = <&mouse_scrl SCRL_RIGHT SCRL_LEFT>;
+            sensor-bindings = <&mouse_scrl SCRL_LEFT SCRL_RIGHT>;
         };
 
         //4
@@ -194,7 +194,7 @@
 &trans                &trans  &trans  &trans  &trans  &trans    &trans  &trans                        &trans                 &trans  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         //6
