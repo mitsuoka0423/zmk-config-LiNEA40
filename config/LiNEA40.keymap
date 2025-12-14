@@ -135,7 +135,7 @@
         version: version {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp V &kp N0 &kp DOT &kp N1>;
+            bindings = <&kp V &kp N0 &kp DOT &kp N2>;
             label = "VERSION";
         };
     };
