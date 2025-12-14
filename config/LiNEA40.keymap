@@ -69,10 +69,9 @@
     scroller {
         layers = <SCROLL CURSOR>;
         input-processors =
-            <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
+            <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>, // スクロール方向を逆転
             <&zip_xy_to_scroll_mapper>,
-            // スクロール方向を逆転,
-            <&trackball_scroll_scaler 1 4>;
+            <&trackball_scroll_scaler 1 10>;
     };
 };
 
