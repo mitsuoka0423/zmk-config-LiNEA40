@@ -71,7 +71,7 @@
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>, // スクロール方向を逆転
             <&zip_xy_to_scroll_mapper>,
-            <&trackball_scroll_scaler 1 10>;
+            <&trackball_scroll_scaler 1 40>;
     };
 };
 
@@ -135,7 +135,7 @@
         version: version {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp V &kp N0 &kp DOT &kp N2>;
+            bindings = <&kp V &kp N0 &kp DOT &kp N3>;
             label = "VERSION";
         };
     };
