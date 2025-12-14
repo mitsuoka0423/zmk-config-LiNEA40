@@ -62,7 +62,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -178,10 +178,10 @@
 
         Window_Layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &kp LA(LS(NUMBER_1))  &kp LA(LS(NUMBER_2))  &kp LS(LA(NUMBER_3))  &kp LS(LA(NUMBER_4))  &kp LS(LA(NUMBER_5))
-&trans  &trans  &trans  &trans  &trans                    &kp LA(NUMBER_1)      &kp LA(NUMBER_2)      &kp LA(NUMBER_3)      &kp LA(NUMBER_4)      &kp LA(NUMBER_5)
-&trans  &trans  &trans  &trans  &trans                    &trans                &trans                &trans                &trans                &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                      &trans                &trans                &trans
+&trans  &trans  &trans  &trans  &trans                    &kp LA(LS(Y))  &kp LA(LS(U))  &kp LS(LA(I))      &kp LS(LA(O))       &kp LS(LA(P))
+&trans  &trans  &trans  &trans  &trans                    &kp LA(H)      &kp LA(J)      &kp LA(K)          &kp LA(L)           &kp LA(MINUS)
+&trans  &trans  &trans  &trans  &trans                    &kp LS(LA(N))  &kp LS(LA(M))  &kp LS(LA(COMMA))  &kp LS(LA(PERIOD))  &kp LS(LA(SLASH))
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                        &trans             &trans              &trans
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
