@@ -17,7 +17,6 @@
 
 &mt {
     flavor = "balanced";
-    tapping-term-ms = <300>;
 };
 
 //mouse cursol
